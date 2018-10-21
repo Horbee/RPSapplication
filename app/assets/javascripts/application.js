@@ -54,6 +54,7 @@ $(document).ready(function() {
 
 	function changeImageSrc(value) {
 		var img = $("#computer");
+		img.css("display", "block");
 
 		switch(value) {
 	    case 0:
