@@ -40,8 +40,11 @@ i {
 .rock {
 	position: absolute;
 	width: 250px;
-	top: 90px;
-	left: 170px;
+	top: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
 }
 
 .paper {
@@ -53,12 +56,9 @@ i {
 
 .scissors {
 	position: absolute;
+	top: 90px;
+	left: 170px;
 	width: 250px;
-	top: 500px;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
 }
 
 .computer {
