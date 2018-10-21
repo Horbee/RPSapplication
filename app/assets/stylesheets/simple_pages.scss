@@ -1,0 +1,101 @@
+.content {
+	margin-top: 20px;
+	border-top: 1px solid #aaa;
+}
+
+.content-title {
+    font-family: 'Lobster', cursive;
+}
+
+.content-score {
+    font-family: 'Charmonman', cursive;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.btn {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+i {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.images {
+	img {
+		padding: 20px;
+	}
+}
+
+.item-container{
+	position: relative;
+	width: 80%;
+}
+
+.rock {
+	position: absolute;
+	width: 250px;
+	top: 90px;
+	left: 170px;
+}
+
+.paper {
+	position: absolute;
+	width: 250px;
+	top: 90px;
+	right: 150px;
+}
+
+.scissors {
+	position: absolute;
+	width: 250px;
+	top: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+
+.computer {
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: -100px;
+	bottom: 0;
+}
+
+.label {
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 250px;
+}
+
+.status-text {
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 280px;
+}
+
+figure img {
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+	-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+}
+
+figure:hover img {
+	cursor: pointer;
+	-webkit-transform: rotate(15deg) scale(1.1);
+	transform: rotate(15deg) scale(1.1);
+}
