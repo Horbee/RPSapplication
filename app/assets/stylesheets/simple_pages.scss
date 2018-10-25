@@ -100,3 +100,128 @@ figure:hover img {
 	-webkit-transform: rotate(15deg) scale(1.1);
 	transform: rotate(15deg) scale(1.1);
 }
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+	.rock {
+		width: 130px;
+		top: 220px;
+	}
+
+	.paper {
+		width: 130px;
+		top: 40px;
+		right: 80px;
+	}
+
+	.scissors {
+		width: 130px;
+		top: 40px;
+		left: 90px;
+	}
+
+	.computer {
+		width: 120px;
+		top: -50px;
+	}
+
+	.label {
+		display: none;
+	}
+
+	.status-text {
+		top: 370px;
+	}
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.rock {
+		width: 130px;
+		top: 250px;
+	}
+
+	.paper {
+		width: 130px;
+		top: 50px;
+		right: 90px;
+	}
+
+	.scissors {
+		width: 130px;
+		top: 50px;
+		left: 100px;
+	}
+
+	.computer {
+		width: 150px;
+		top: -50px;
+	}
+
+	.label {
+		display: none;
+	}
+
+	.status-text {
+		top: 370px;
+	}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+	.rock {
+		width: 150px;
+		top: 350px;
+	}
+
+	.paper {
+		width: 150px;
+		top: 70px;
+		right: 100px;
+	}
+
+	.scissors {
+		width: 150px;
+		top: 70px;
+		left: 120px;
+	}
+	.computer {
+		width: 150px;
+		top: -50px;
+	}
+
+	.label {
+		top: 130px;
+	}
+
+	.status-text {
+		top: 150px;
+	}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+	.rock {
+		width: 200px;
+	}
+
+	.paper {
+		width: 200px;
+	}
+
+	.scissors {
+		width: 200px;
+	}
+	.computer {
+		top: -50px;
+	}
+
+	.label {
+		top: 200px;
+	}
+
+	.status-text {
+		top: 220px;
+	}
+}

@@ -14,7 +14,7 @@ class HighscoresController < ApplicationController
 
   	private
   		def allowed_params
-  			params.require(:highscore).permit(:name, :win, :lose, :rate)
+  			params.require(:highscore).permit(:name, :win, :rounds, :rate)
   		end
 
 end

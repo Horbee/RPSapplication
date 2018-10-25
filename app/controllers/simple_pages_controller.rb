@@ -1,10 +1,8 @@
 class SimplePagesController < ApplicationController
   
   def index
-	@scores = Highscore.order(rate: :desc)
+	@scores = Highscore.order(rate: :desc).limit(10)
 	@newScore = Highscore.new
-	# rate = wins / (wins + lose) 
-	# Highscore.create(name: "Tristan", win: 15, lose: 17, rate: 15 / 17)
   end
 
   

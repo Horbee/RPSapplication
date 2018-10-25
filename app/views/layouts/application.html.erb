@@ -24,16 +24,19 @@
   <body>
     <ul class="nav justify-content-center">
       <li class="nav-item">
-        <i class="fas fa-user"></i><p class="content-score" id="score"> 0 : 0 </p><i class="fas fa-desktop"></i>
+        <i class="fas fa-star" data-toggle="tooltip" data-placement="bottom" title="Your Points"></i><p class="content-score" id="score"> 0 : 0 </p><i class="fas fa-gamepad" data-toggle="tooltip" data-placement="bottom" title="Current Round"></i>
+      </li>
+      <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="The button resets the counters">
+        <button type="button" class="btn btn-primary" id="new-game-button">New Match</button>
+      </li>
+      <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="You have to play at least 10 rounds">
+        <button type="button" class="btn btn-primary" id="save-button" data-toggle="modal" data-target="#savescoreModal" disabled="true">Save my score</button>
       </li>
       <li class="nav-item">
-        <button type="button" class="btn btn-primary" id="new-game-button">New Game</button>
+        <button type="button" class="btn btn-info" data-toggle="modal"  data-target="#highscoreModal">Best Highscore: <%= @scores[0].name %></button>
       </li>
       <li class="nav-item">
-        <button type="button" class="btn btn-primary" id="save-button" data-toggle="modal" data-target="#savescoreModal">Save my score</button>
-      </li>
-      <li class="nav-item">
-        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#highscoreModal">Best Highscore: <%= @scores[0].name %></button>
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#helpModal">Help</button>
       </li>
     </ul>
 

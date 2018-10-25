@@ -8,6 +8,7 @@
 	<div class="row">
 		<div class="col-sm-12 text-center">
 			<%= image_tag("rps.png", :class => 'img-fluid item-container') %>
+			
 			<figure class="item" id="0"><%= image_tag("rock.png", :class => 'img-fluid rock') %></figure>
 			<figure class="item" id="1"><%= image_tag("paper.png", :class => 'img-fluid paper') %></figure>
 			<figure class="item" id="2"><%= image_tag("scissors.png", :class => 'img-fluid scissors') %></figure>
@@ -19,6 +20,8 @@
 			) %>
 		</div>
 	</div>
+
+	
 </section>
 
 
@@ -64,6 +67,7 @@
 		      <th scope="col">#</th>
 		      <th scope="col">Name</th>
 		      <th scope="col">Played Matches</th>
+		      <th scope="col">Total points</th>
 		      <th scope="col">Rate</th>
 		    </tr>
 		  </thead>
@@ -73,7 +77,8 @@
 			  	<tr>
 			      <th scope="row"><%= num %></th>
 			      <td><%= i.name %></td>
-			      <td><%= i.win + i.lose %></td>
+			      <td><%= i.rounds %></td>
+			      <td><%= i.win %></td>
 			      <td><%= number_with_precision(i.rate, precision: 2) %></td>
 			    </tr>
 			    <% num += 1 %>
@@ -81,6 +86,31 @@
 		  </tbody>
 		</table>
         
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Help -->
+<div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Game Rules</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<h3>Welcome!</h3>
+      	<p>This is a Rock, Paper, Scissors game. The player chooses one item from Rock, Paper and Scissors. After that the computer also chooses a random item.</p>
+      	<p>If you <strong>win you get 1 Point</strong>, if you <strong>lose you lose 1 Point</strong>. In case of a <strong>draw, you get 0.5 Point</strong>. </p>
+      	<p>The Rating is calculated as followes: Total Points / Played Rounds</p>
+      	<p>You have to play <strong>at least 10 rounds</strong> to save your score in the database.</p>
+      	<p>Thank you for playing!</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
