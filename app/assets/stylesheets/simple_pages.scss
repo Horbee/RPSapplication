@@ -105,20 +105,20 @@ figure:hover img {
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { 
 	.rock {
-		width: 130px;
-		top: 220px;
+		width: 100px;
+		top: 120px;
 	}
 
 	.paper {
-		width: 130px;
-		top: 40px;
-		right: 80px;
+		width: 100px;
+		top: 0px;
+		right: 20px;
 	}
 
 	.scissors {
-		width: 130px;
-		top: 40px;
-		left: 90px;
+		width: 100px;
+		top: 0px;
+		left: 20px;
 	}
 
 	.computer {
