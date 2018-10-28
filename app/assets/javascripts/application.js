@@ -43,7 +43,11 @@ $(document).ready(function() {
 
 		roundsCounter++;
 		if(roundsCounter >= 10) {
-			// end of match
+			// it should run only once
+			if ($('#save-button').prop("disabled"))
+				animate('#save-button', 'animated tada');
+			
+			// than activate the button
 			$('#save-button').prop("disabled", false);
 		} else {
 			$('#save-button').prop("disabled", true);
@@ -78,13 +82,13 @@ $(document).ready(function() {
 	        break;
 		} 
 
-		animate("#computer");
+		animate("#computer", 'animated bounceInDown');
 	}
 
-	function animate(element){
-		$(element).addClass('animated bounceInDown');
+	function animate(element, classTitle){
+		$(element).addClass(classTitle);
 		var wait = setTimeout(function() {
-			$(element).removeClass('animated bounceInDown');
+			$(element).removeClass(classTitle);
 		}, 1000);
 	}
 
